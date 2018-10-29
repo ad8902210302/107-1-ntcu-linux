@@ -1,14 +1,14 @@
 #  1.管理群組共用資料的權限設計：</br></br>
 
-####  用"groupadd name"新增群組</br>
+####  用"groupadd name"新增群組。</br>
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/raw/HW-4/ACS107127/screen4/1.png)</br></br>
 
 ##  *建立帳號名稱為： myuser1, myuser2, myuser3 ，通通加入 mygroup，且密碼為 MyPassWord </br>
-####  用"useradd -g mygroup name "建立一個群組為"mygroup"的帳號 </br>
+####  用"useradd -g mygroup name "建立一個群組為"mygroup"的帳號。 </br>
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/raw/HW-4/ACS107127/screen4/2.png)</br></br>
 
 ##  *建立帳號名稱為： nouser1, nouser2, nouser3 ，通通加入 nogroup，且密碼為 MyPassWord </br>
-####  用"useradd -g nogroup name "建立一個群組為"nogroup"的帳號 </br>
+####  用"useradd -g nogroup name "建立一個群組為"nogroup"的帳號。 </br>
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/raw/HW-4/ACS107127/screen4/3.png)</br></br>
 
 ##  *建立一個名為 /srv/myproject 的目錄，這個目錄可以讓 mygroup 群組內的使用者完整使用，且【新建的檔案擁有群組】為 mygroup 。不過其他人不能有任何權限</br>
@@ -27,8 +27,8 @@
 ####  用nouser1執行【myls /srv/myproject】時，無法開啟檔案。
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/raw/HW-4/ACS107127/screen4/7.png)</br></br>
 
-####  要用"chmod u+s"給予SUID的權限(只要任何人有x的執行權，當用戶執行時，會自動透過SUID轉換身分為owner，亦變為root的身分)。</br>
-####  執行【myls /srv/myproject】</br>
+####  要用"chmod u+s"給予使用者SUID的權限(只要任何人有x的執行權，當用戶執行時，會自動透過SUID轉換身分為owner，亦變為root的身分)。</br>
+####  執行【myls /srv/myproject】。</br>
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/raw/HW-4/ACS107127/screen4/8.png)</br></br>
 
 #  2.使用程序觀察的指令，搭配 grep 的關鍵字查詢功能，將找到的 rsyslog 相關的程序的 PID, PRI, NI, COMMAND 等資訊轉存到 /root/process_syslog.txt 檔案中。(搭配>重導向輸出) </br>
