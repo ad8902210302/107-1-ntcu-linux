@@ -23,7 +23,7 @@
 ####  回到先前編輯的檔案，並新增"export HOSTS_PATH"。
 ![Alt text](https://github.com/ad8902210302/107-1-ntcu-linux/blob/HW-6/ACS107127/screen/5.png)</br></br>
 
-####  **記得在輸入一次"source ~/.bashrc"**。</br>
+####  <strong>記得再輸入一次"source ~/.bashrc"<strong>。</br>
 ####  按照先前的步驟重複執行一次。</br>
 ####  執行"a.out"，讀到"HOSTS_PATH"。</br>
 ####  輸入"echo $?"，得到"0"(表示執行成功!!!)。</br>
