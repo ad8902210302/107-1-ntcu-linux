@@ -1,4 +1,4 @@
-1. 請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 `netstat -alntp | grep ssh` 確認是否啟動二個sshd服務，範例如下：
+###  1. 請仿照課堂上練習，透過systemd管理二個sshd服務，並讓第二個sshd服務的 port 放行於 2222。完成後可以使用指令 `netstat -alntp | grep ssh` 確認是否啟動二個sshd服務，範例如下：
 
 ```sh
 $ netstat -alntp | grep ssh
